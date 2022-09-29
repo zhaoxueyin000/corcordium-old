@@ -1,0 +1,65 @@
+//animation.scss
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.slide-fade-enter-active {
+  transition: all 0.1s ease;
+}
+.slide-fade-leave-active {
+  transition: all  0.1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter,.slide-fade-leave-to{
+  opacity: 0;
+}
+
+
+.slide-fade-left-enter-active{
+  animation:slideInLeft 1s;
+}
+.slide-fade-left-leave-active {
+  animation:slideOutLeft 1s;
+}
+
+   
+.slide-fade-o-enter-active{
+  transition: all 1s ease;
+}
+.slide-fade-o-leave-active {
+ transition: all  .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-o-enter,.slide-fade-o-leave-to{
+  opacity: 0;
+}
+
+
+.drowdown{
+      animation: drop .8s ease infinite;
+    }
+
+@keyframes drop{
+        0%{
+         top:0rem;
+        }
+        50%{
+          top: -.1rem;
+        }
+        100%{
+          top:0rem;
+        }
+    }
+.flush{
+   animation: flushc 3s cubic-bezier(1.0, 0.5, 0.8, 1.0) infinite;
+}
+
+@keyframes flushc{
+        0%{
+         opacity: 0.2
+        }
+        50%{
+          opacity:.4
+        }
+        100%{
+          opacity: 0.2
+        }
+    }

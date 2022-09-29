@@ -1,0 +1,7 @@
+$browser-default-font-size:100px!default;
+html,body{
+    font-size:$browser-default-font-size;
+}
+@function px2rem($px){
+    @return $px/$browser-default-font-size*1rem;
+}
